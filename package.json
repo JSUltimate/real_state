@@ -1,0 +1,25 @@
+{
+  "name": "real_state",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./src/scss/main.scss ./src/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JSUltimate/real_state.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JSUltimate/real_state/issues"
+  },
+  "homepage": "https://github.com/JSUltimate/real_state#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "sass": "^1.57.1"
+  }
+}
