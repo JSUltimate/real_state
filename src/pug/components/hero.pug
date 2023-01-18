@@ -1,34 +1,37 @@
-div(class='hero')
+div.hero
 
-    div(class='hero__social social')
-        div(class='social__email-sec email-sec')
-            span(class='email-sec__desc') Email us at :
-            a(class='email-sec__link' href='mailto:example@mail.com') example@mail.com
+    div.hero__social.social
+        div.social__email-sec.email-sec
+            img.email-sec__icon(src='./src/images/email.svg')
+            span.email-sec__desc Email us at :&nbsp;
+            a.email-sec__link(href='mailto:example@mail.com') example@mail.com
 
-    div(class='social__social-icons social-icons')
-        img(class='social-icons__icon' src='./src/images/fb.svg')
-        img(class='social-icons__icon' src='./src/images/drib.svg')
-        img(class='social-icons__icon' src='./src/images/lin.svg')
-        img(class='social-icons__icon' src='./src/images/insta.svg')
-        img(class='social-icons__icon' src='./src/images/be.svg')
-        img(class='social-icons__icon' src='./src/images/phone.svg')
-        span(class='social-icons__phone-number') 123-4567 890
+        div.social__social-icons.social-icons
+            img.social-icons__fb(src='./src/images/fb.svg')
+            img.social-icons__drib(src='./src/images/drib.svg')
+            img.social-icons__lin(src='./src/images/lin.svg')
+            img.social-icons__insta(src='./src/images/insta.svg')
+            img.social-icons__be(src='./src/images/be.svg')
+            span.social-icons__phone
+                img.social-icons__phone-img(src='./src/images/phone.svg')
+            span.social-icons__phonenumber 123-4567 890
 
-    header(class='hero__header header')
-        img(class='logo__img' src='./src/images/logo_full.svg')
-        nav(class='header__menu menu')
-            a(class='menu__item' href='#') Home
-            a(class='menu__item' href='#') About us
-            a(class='menu__item' href='#') Our Agents
-            a(class='menu__item' href='#') Properties
-            a(class='menu__item' href='#') Gallery
-            a(class='menu__item' href='#') Blog
-            a(class='menu__item' href='#') Contact us
-            a(class='menu__item' href='#') Search
-        button(class='header__btn') Add Listing
+    header.hero__header.header
+        img.header__img(src='./src/images/logo_full.svg')
+        nav.header__menu.menu
+            a.menu__item(href='#') Home
+            a.menu__item(href='#') About us
+            a.menu__item(href='#') Our Agents
+            a.menu__item(href='#') Properties
+            a.menu__item(href='#') Gallery
+            a.menu__item(href='#') Blog
+            a.menu__item(href='#') Contact us
+            a.menu__item(href='#') Search
+            a.menu__btn(href='#') Add Listing
 
-    h1(class='hero__cta-hdn') Find Your Dream Home
-    p(class='hero__cta-subhdn')
-        | Vestibulum ante ipsum in faucibus orci luctus
-        | et ultrices posuere cubilia curae; Proin sodales
-        | ultrices nulla blandit vulutpat.
+    .hero__cta
+        h1.hero__cta-hdn Find Your Dream Home
+        p.hero__cta-subhdn
+            | Vestibulum ante ipsum in faucibus orci luctus
+            | et ultrices posuere cubilia curae; Proin sodales
+            | ultrices nulla blandit vulutpat.
