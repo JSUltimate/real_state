@@ -1,0 +1,7 @@
+@import "partials/functions";
+@import "partials/variables";
+
+.l-wrapper {
+    max-width: $max-width;
+    margin-inline: auto;
+}

@@ -1,0 +1,18 @@
+meta(charset='UTF-8')
+meta(name='viewport' content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+meta(http-equiv="X-UA-Compatible" content="ie=edge")
+
+// żeby sprawdzić, że normalize jest dodane do htmla w przeglądarce trzeba sprawdzić
+// czy tag html ma w DevToolsach takie atrybuty:
+//    line-height: 1.15;
+//    -webkit-text-size-adjust: 100%;
+// (na podstawie:)
+// https://stackoverflow.com/questions/59397647/how-do-i-check-if-normalized-css-is-working-in-angularjs-or-not
+link(rel="stylesheet" href="./node_modules/normalize.css/normalize.css")
+link(rel="preconnect" href="https://fonts.googleapis.com")
+link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+link(href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Public+Sans:wght@600&display=swap" rel="stylesheet")
+link(rel="stylesheet" href="./src/css/style.css")
+script(src="./src/scripts/app.js" async defer)
+
+title REIS Real State - Find Your Dream Home

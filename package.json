@@ -1,0 +1,30 @@
+{
+  "name": "real_state",
+  "version": "0.1.0",
+  "description": "This webpage is a recreation of a [free template on Figma](https://www.figma.com/file/yEM629OaIWnsp8K2hh6rRT/REIS---Real-State-Listing-Figma-Template-(Community)-(Community)?node-id=5%3A172&t=9jy9iFLdWn7Sb96z-0).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass ./src/scss/main.scss ./src/css/style.css",
+    "sasswatch": "sass --watch ./src/scss/main.scss ./src/css/style.css",
+    "pugpretty": "./node_modules/.bin/pug -P src/pug/index.pug -o .",
+    "pug": "./node_modules/.bin/pug src/pug/index.pug -o ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JSUltimate/real_state.git"
+  },
+  "keywords": [],
+  "author": "Andrzej Legutko <andrzejlegutko@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JSUltimate/real_state/issues"
+  },
+  "homepage": "https://github.com/JSUltimate/real_state#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "pug": "^3.0.2",
+    "pug-cli": "^1.0.0-alpha6",
+    "sass": "^1.57.1"
+  }
+}

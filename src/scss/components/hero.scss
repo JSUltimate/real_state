@@ -1,0 +1,175 @@
+@import "../partials/variables";
+@import "../partials/functions";
+
+.hero {
+
+    background-image: url('#{$images-path}/house_hero_shade.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.social {
+
+    display: flex;
+    justify-content: space-between;
+    padding: toRem(31px) toRem(100px);
+
+
+}
+
+.email-sec {
+
+    display: flex;
+    align-items: center;
+
+    &__icon {
+        width: toRem(28px);
+        height: toRem(28px);
+        margin-inline: $spacing;
+    }
+
+    &__desc {
+        color: $white;
+        font-family: $font-inter;
+        font-size: $size-smaller;
+        font-weight: 700;
+    }
+
+    &__link {
+        color: $white;
+        font-family: $font-inter;
+        font-size: $size-smaller;
+        text-decoration: none;
+        font-weight: 400;
+    }
+}
+
+.social-icons {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__fb {
+        padding: toRem(10px);
+        margin-inline: toRem(8px);
+    }
+
+    &__drib {
+        padding: toRem(11px);
+        margin-inline: toRem(8px);
+    }
+
+    &__lin {
+        padding: toRem(11px);
+        margin-inline: toRem(8px);
+    }
+
+    &__insta {
+        padding: toRem(11px);
+        margin-inline: toRem(8px);
+    }
+
+    &__be {
+        padding: toRem(11px);
+        margin-inline: toRem(8px);
+    }
+
+    &__phone {
+        padding: toRem(10px);
+        margin-inline: toRem(48px) toRem(8px);
+        position: relative;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            left: - toRem(27px);
+            top: - toRem(2px);
+            bottom: - toRem(2px);
+            width: toRem(1px);
+            background-color: $white;
+        }
+    }
+
+    &__phonenumber {
+        font-family: $font-inter;
+        color: $white;
+        font-weight: 400;
+        font-size: $size-smaller;
+    }
+}
+
+.header {
+
+    display: flex;
+    justify-content: space-between;
+    padding: toRem(31px) toRem(100px);
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: - toRem(100px);
+        right: - toRem(100px);
+        overflow: hidden;
+        bottom: toRem(105px);
+        height: toRem(1px);
+        background-color: $white;
+    }
+
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+        &__item {
+            margin-inline: $spacing-2;
+            font-family: $font-inter;
+            font-size: $size-smaller;
+            font-weight: 400;
+            color: $white;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        &__btn {
+            margin-inline: $spacing;
+            padding: $spacing $spacing-2;
+            font-family: $font-inter;
+            font-size: $size-base;
+            font-weight: 500;
+            color: $white;
+            text-decoration: none;
+            border: toRem(1px) solid $primary-50;
+            border-radius: toRem(4px);
+        }
+}
+
+.hero__cta {
+    margin: 0 auto;
+    padding: toRem(98px) 0 toRem(283px);
+    max-width: 6*$pillar-width + 7*$gutter-width;
+
+    &-hdn {
+        text-align: center;
+        font-family: $font-public-sans;
+        font-size: $size-h1;
+        color: $white;
+        font-weight: 600;
+    }
+    &-subhdn {
+        text-align: center;
+        font-family: $font-inter;
+        font-size: $size-sub-hdn;
+        line-height: $line-height;
+        color: $primary-50;
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,41 @@
+@import "functions";
+
+// Paths
+$images-path: "../images";
+
+// Layout variables
+$max-width: toRem(1920px);
+$pillar-width: toRem(88px);
+$gutter-width: toRem(24px);
+
+// Colors:
+$white: #FFFFFF;
+$primary-50: #EDEFF6;
+$primary-400: #6E80B4;
+$primary-500: #4A60A1;
+$primary-700: #2C3A61;
+$primary-800: #1E2640;
+$gray-100: #CFD3D6;
+$gray-400: #889099;
+$gray-500: #6D737A;
+$gray-700: #363A3D;
+
+// Spacing:
+$spacing: toRem(12px);      // e.g. top paddings in btns
+$spacing-2: toRem(24px);    // e.g. left-right paddings in btns
+$line-height: 1.4;
+
+// Fonts:
+
+$font-inter: "Inter", sans-serif;
+$font-public-sans: "Public Sans", sans-serif;
+
+// Font sizes:
+$size-h1: toRem(52px);
+
+$size-hdn: toRem(40px);          // e.g. section names
+$size-sub-hdn: toRem(20px);
+
+$size-base: toRem(16px);
+$size-smaller: toRem(14px);
+$size-bigger: toRem(24px);
