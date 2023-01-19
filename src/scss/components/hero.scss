@@ -107,6 +107,7 @@
     justify-content: space-between;
     padding: toRem(31px) toRem(100px);
     position: relative;
+    overflow-x: hidden;
 
     &::before {
         content: "";
@@ -115,7 +116,6 @@
         top: 0;
         left: - toRem(100px);
         right: - toRem(100px);
-        overflow-x: hidden;
         bottom: toRem(105px);
         height: toRem(1px);
         background-color: $white;

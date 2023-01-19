@@ -22,7 +22,7 @@
 
 .cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 
     .card {
@@ -31,8 +31,23 @@
         width: 4*$pillar-width + 3*$gutter-width;
         border-radius: toRem(6px);
         position: relative;
+        margin-bottom: toRem(27px);
+        margin-right: toRem(24px);
+
+        &:nth-of-type(3n) {
+            margin-right: 0;
+        }
 
         &:active {
+        }
+
+        @media screen and (max-width: 1319px) {
+            &:nth-of-type(3n) {
+                margin-right: toRem(24px);
+            }
+            &:nth-of-type(2n) {
+                margin-right: 0;
+            }
         }
 
         &__active-wrapper {
@@ -54,8 +69,13 @@
 
         &__img {
             width: 100%;
-            height: 40%;
+            height: auto;
             border-radius: toRem(6px) toRem(6px) 0 0;
+            aspect-ratio: 1.75;
+        }
+
+        &__wrapper {
+            padding: toRem(25px);
         }
 
         &__hdn {
@@ -65,7 +85,7 @@
             text-transform: uppercase;
             color: $gray-700;
             line-height: 1.5;
-            padding: toRem(20px) toRem(25px);
+            padding-bottom: toRem(20px);
             margin: 0;
         }
 
@@ -74,13 +94,15 @@
             font-weight: 600;
             color: $primary-500;
             font-size: $size-sub-hdn;
-            padding: toRem(20px) toRem(25px);
+            padding-bottom: toRem(20px);
             margin: 0;
         }
 
         &__details {
             display: flex;
             align-items: center;
+            padding-bottom: toRem(16px);
+
         }
 
         &__info {
@@ -88,6 +110,40 @@
             font-weight: 500;
             font-size: $size-bigger;
             color: $gray-500;
+            margin-right: toRem(24px);
+        }
+        &__icon {
+            margin-right: toRem(6px);
+        }
+        &__footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: $gray-50 solid toRem(1px);
+            padding-top: toRem(16px);
+        }
+        &__avatar {
+            border-radius: 50%;
+            width: toRem(42px);
+            height: toRem(42px);
+        }
+        &__avatar-name {
+            font-family: $font-inter;
+            font-weight: 500;
+            font-size: $size-sub-hdn;
+            color: $gray-700;
+        }
+        &__avatar-sec {
+            display: flex;
+            align-items: center;
+        }
+
+        &__actions {
+
+        }
+
+        &__social-icon {
+
         }
     }
 }
