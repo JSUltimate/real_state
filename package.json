@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass --watch ./src/scss/main.scss ./src/css/style.css",
+    "sassonce": "sass ./src/scss/main.scss ./src/css/style.css",
     "pugpretty": "pug -P src/pug/index.pug -o .",
-    "pug": "pug -w src/pug/index.pug -o ."
+    "pug": "pug --watch src/pug/index.pug -o ."
   },
   "repository": {
     "type": "git",
