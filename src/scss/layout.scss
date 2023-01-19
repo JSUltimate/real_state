@@ -5,3 +5,14 @@
     max-width: $max-width;
     margin-inline: auto;
 }
+
+.l-wrapper-sec {
+    margin-inline: auto;
+    max-width: 12*$pillar-width + 11*$gutter-width;
+}
+
+.l-wrapper-hdn {
+    margin-inline: auto;
+    text-align: center;
+    max-width: 6*$pillar-width + 7*$gutter-width;
+}

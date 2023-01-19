@@ -115,7 +115,7 @@
         top: 0;
         left: - toRem(100px);
         right: - toRem(100px);
-        overflow: hidden;
+        overflow-x: hidden;
         bottom: toRem(105px);
         height: toRem(1px);
         background-color: $white;
