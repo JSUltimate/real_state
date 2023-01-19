@@ -78,24 +78,16 @@
             margin: 0;
         }
 
-        &__car-icon {
-            padding: 0 toRem(6px) 0 toRem(25px);
-            margin: 0;
+        &__details {
+            display: flex;
+            align-items: center;
         }
 
-        &__car {
+        &__info {
             font-family: $font-inter;
             font-weight: 500;
             font-size: $size-bigger;
             color: $gray-500;
-            //position: relative;
-
-            //&::before {
-            //    content: "";
-            //    background-image: url('#{$images-path}/letest/icon_car.svg');
-            //    left: 0;
-            //    position: absolute;
-            //}
         }
     }
 }
