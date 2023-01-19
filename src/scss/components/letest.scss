@@ -22,7 +22,7 @@
 
 .cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 
     .card {
@@ -31,8 +31,24 @@
         width: 4*$pillar-width + 3*$gutter-width;
         border-radius: toRem(6px);
         position: relative;
+        margin-bottom: toRem(20px);
+        margin-right: toRem(20px);
+
+        &:nth-of-type(3n) {
+            margin-right: 0;
+        }
 
         &:active {
+        }
+
+        @media screen and (max-width: 1330px) {
+            &:nth-of-type(3n) {
+                margin-right: toRem(20px);
+            }
+
+            &:nth-of-type(2n) {
+                margin-right: 0;
+            }
         }
 
         &__active-wrapper {
@@ -54,18 +70,23 @@
 
         &__img {
             width: 100%;
-            height: 40%;
+            height: auto;
+            aspect-ratio: 1.75;
             border-radius: toRem(6px) toRem(6px) 0 0;
+        }
+
+        &__wrapper {
+            padding: toRem(25px);
         }
 
         &__hdn {
             font-family: $font-inter;
             font-weight: 400;
-            font-size: $size-sub-hdn;
+            font-size: toRem(21px);
             text-transform: uppercase;
             color: $gray-700;
             line-height: 1.5;
-            padding: toRem(20px) toRem(25px);
+            padding-bottom: toRem(20px);
             margin: 0;
         }
 
@@ -74,13 +95,14 @@
             font-weight: 600;
             color: $primary-500;
             font-size: $size-sub-hdn;
-            padding: toRem(20px) toRem(25px);
+            padding-bottom: toRem(20px);
             margin: 0;
         }
 
         &__details {
             display: flex;
             align-items: center;
+            padding-bottom: toRem(16px);
         }
 
         &__info {
@@ -88,6 +110,47 @@
             font-weight: 500;
             font-size: $size-bigger;
             color: $gray-500;
+            padding-right: toRem(24px);
+        }
+
+        &__icon {
+            padding-right: toRem(5px);
+        }
+
+        &__footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: $gray-50 solid toRem(1px);
+            padding-top: toRem(16px);
+        }
+
+        &__avatar-sec {
+            display: flex;
+            align-items: center;
+        }
+
+        &__avatar {
+            border-radius: 50%;
+            width: toRem(42px);
+            height: toRem(42px);
+            margin: 0 toRem(9px) 0 0;
+        }
+
+        &__avatar-name {
+            font-family: $font-inter;
+            font-weight: 500;
+            font-size: $size-sub-hdn;
+            color: $gray-700;
+        }
+
+
+
+        &__social-icon {
+            margin: 0 toRem(6px) 0 0;
+            background-color: $primary-50;
+            border-radius: toRem(2px);
+            padding: toRem(4px);
         }
     }
 }
