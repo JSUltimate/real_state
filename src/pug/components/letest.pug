@@ -10,10 +10,12 @@
 
         .letest__cards.cards
             each val in [1, 2, 3, 4, 5, 6]
-                .cards__card.card.card--active
-                    .card__active-wrapper
-                        a.card__btn(href='#') Hot offer
-                        a.card__btn(href='#') Sale
+                .cards__card.card
+                    if val === 1
+                        .card__sale
+                            a.card__btn(href='#') Hot offer
+                            a.card__btn(href='#') Sale
+
                     img.card__img(src='./src/images/letest/card'+val+'.jpg')
                     .card__wrapper
                         h3.card__hdn 92 Allium Place, Orlando FL 32827
@@ -33,3 +35,5 @@
                                 img.card__social-icon(src='./src/images/letest/icon_share.svg')
                                 img.card__social-icon(src='./src/images/letest/icon_heart.svg')
                                 img.card__social-icon(src='./src/images/letest/icon_plus.svg')
+
+    a.letest__btn(href='#') Load more listing

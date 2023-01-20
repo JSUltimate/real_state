@@ -24,7 +24,7 @@ $gray-700: #363A3D;
 // Spacing:
 $spacing: toRem(12px);      // e.g. top paddings in btns
 $spacing-2: toRem(24px);    // e.g. left-right paddings in btns
-$line-height: 1.4;
+$line-height: 1.4;          // usually
 
 // Fonts:
 
@@ -32,11 +32,11 @@ $font-inter: "Inter", sans-serif;
 $font-public-sans: "Public Sans", sans-serif;
 
 // Font sizes:
-$size-h1: toRem(52px);
+$size-h1: toRem(52px);           // Call To Action heading only
 
 $size-hdn: toRem(40px);          // e.g. section names
-$size-sub-hdn: toRem(20px);
+$size-big: toRem(24px);          // e.g. other headings
+$size-subhdn: toRem(20px);       // e.g. under section names
 
 $size-base: toRem(16px);
 $size-smaller: toRem(14px);
-$size-bigger: toRem(24px);
